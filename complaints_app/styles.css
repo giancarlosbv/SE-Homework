@@ -1,0 +1,81 @@
+body {
+    background-size: cover;
+    background-repeat: none;
+  }
+  
+  .top-Text {
+    text-align: center;
+  }
+  
+  .complaint-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(195, 195, 195);
+    opacity: 0.9;
+    padding: 3rem;
+    margin: 3rem;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    background-color: rgb(29, 100, 194);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(87, 129, 184);
+  }
+  
+  .btn-disable {
+    pointer-events: none;
+  }
+  
+  #search {
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #search:hover {
+    border: 2px solid yellow;
+  }
+  
+  .dynamic-container {
+    width: 45vw;
+    margin-top: 1vh;
+  }
+  
+  .descriptor-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 5px 0;
+  }
+  
+  .response {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(131, 38, 38);
+    color: white;
+  }
+  
+  .response:hover {
+    background-color: rgb(156, 89, 89);
+    padding: 7px 10px;
+  }
+  
+  .item {
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .response-container {
+    display: none;
+  }
+  .resolution-Text {
+    font-weight: bold;
+    color: rgb(29, 100, 194);
+    padding: 1rem;
+  }
