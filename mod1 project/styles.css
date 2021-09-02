@@ -7,6 +7,10 @@
 body{
     background-color: aqua;
 }
+.contact{
+margin-left: 40em;
+margin-right: 40em;
+}
 header{
    display:flex;
    justify-content: space-between;

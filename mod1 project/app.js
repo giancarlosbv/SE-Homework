@@ -35,17 +35,17 @@ function displayManga(data) {
         let image = data.top[i].image_url
         let score = data.top[i].score
         let type = data.top[i].type
-        let episodes = data.top[i].episodes
+        let volumes = data.top[i].volumes
         let start_date = data.top[i].start_date
         let end_date = data.top[i].end_date
         list.innerHTML += `<li class = "list-item"> ${title}</li> <img class = image src = "${image}" alt = "${title}">
         <br>
-        <button onclick ="document.getElementById('text${i}').style.display = 'inline'"    id = "more${i}" class = readMore>read more</button>
+        <button onclick ="document.getElementById('mangatext${i}').style.display = 'inline'"    id = "more${i}" class = readMore>read more</button>
         <button id = "less${i}" class = readLess>read less</button>
-        <ul id = "text${i}" class = moreText><li><a href = "${url}">MyAnimeList Link</a></li>
+        <ul id = "mangatext${i}" class = moreText><li><a href = "${url}">MyAnimeList Link</a></li>
         <li>Score: ${score}</li>
         <li>Type: ${type}</li>
-        <li>Episodes: ${episodes}</li>
+        <li>volumes: ${volumes}</li>
         <li>Start Date: ${start_date}</li>
         <li>End Date: ${end_date}</li>
         </ul><br><br><br>`;
