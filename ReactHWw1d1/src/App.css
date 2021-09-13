@@ -1,0 +1,75 @@
+.reviews{
+  grid-area: reviews;
+}
+.averageRating{
+  grid-area: averageRating;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.sentimentAnalysis{
+  grid-area: sentimentAnalysis;
+}
+.visitors{
+  grid-area: visitors;
+}
+.box-border{
+  
+  min-height: auto;
+}
+
+.App {
+  min-height: 90vh;
+  min-width: none;
+  background-color:rgb(219, 219, 219);
+  padding: 10px;
+  text-align: center;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: 
+  "sidebar reviews averageRating sentimentAnalysis"
+  "sidebar visitors visitors visitors"
+  "sidebar visitors visitors visitors";
+  justify-items: stretch;
+}
+.App >*{
+  background-color:rgb(200, 200, 200);
+  padding: 10px;
+  margin: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
