@@ -14,10 +14,28 @@ const SettingsContextProvider = (props) => {
 
     const updateExecute = (updatedSettings) => {
         setExecuting(updatedSettings)
+        setTimerTime(updatedSettings)
     }
-    
+
+    const setTimerTime = evaluate => {
+        switch (evaluate.active) {
+            case 'work':
+                setPomodoro(evaluate.work)
+                break;
+            case 'short':
+                setPomodoro(evaluate.short)
+                break;
+            case 'long':
+                setPomodoro(evaluate.long)
+                break;
+
+            default:
+                setPomodoro(0)
+                break;
+        }
+    }
     return (
-        <SettingContext.Provider value={{stopTimer, updateExecute}}>
+        <SettingContext.Provider value={{ stopTimer, updateExecute }}>
             {props.children}
         </SettingContext.Provider>
     )
