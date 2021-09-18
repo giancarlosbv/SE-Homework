@@ -5,10 +5,10 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import Home from '../Home'
-  import About from '../About'
-  import Profile from '../Profile'
-  import Other from '../Other'
+  import Home from './pages/Home'
+  import About from './pages/About'
+  import Profile from './pages/Profile'
+  import Other from './pages/Other'
 const Nav = () => {
     return (
 
