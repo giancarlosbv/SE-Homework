@@ -4,7 +4,7 @@ import Button from "../Button"
 import CountdownAnimation from "../CountdownAnimation";
 import SetPomodoro from "../SetPomodoro";
 import { useContext, useEffect } from "react";
-
+import thumbtack from '../../images/thumbtack.png'
 
 
 const Pomodoro = () => {
@@ -23,7 +23,7 @@ const Pomodoro = () => {
 
     return (
         <div className='pomodoro-container'>
-
+        <img src = {thumbtack} height = '50vh'/>
         <h1>Pomodoro</h1>
         <p>Grow Your Mind</p>
         {pomodoro == 0 ?

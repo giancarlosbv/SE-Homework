@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import thumbtack from '../../images/thumbtack.png'
 
 const Other = () => {
 
@@ -23,6 +24,7 @@ const Other = () => {
     return (  
         
         <div className = "current">
+        <img src = {thumbtack} height = '50vh'/>
             <h1>{ count }</h1>
             <button onClick={() => setCount(count + 1)}>Add</button>
         </div>

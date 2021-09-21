@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from 'react'
-
+import thumbtack from '../../images/thumbtack.png'
 const Home = () => {
-
-    let [data, setData] = useState([])
-
-    useEffect(() => {
-        console.log('useEffect runs: API fetch')
-        fetch('https://jsonplaceholder.typicode.com/posts/')
-            .then(response => response.json())
-            .then(result => setData(result))
-    }, [])
 
     return ( 
         <div className="current">
+        <img src = {thumbtack} height = '50vh'/>
             <h1>Home Page</h1>
             <p>Welcome to your corkboard!</p>
+            <image src = "../images/thumbtack.png"/>
             {/* {data.map(item => <p key={item.id}>{ item.title }</p>)} */}
         </div>
     );
