@@ -30,7 +30,7 @@ const Profile = () => {
     const increment = () => setCount(count + 1)
 
     return ( 
-        <div className='profile' style={{ backgroundColor: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`}}>
+        <div className='profile current' style={{ backgroundColor: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`}}>
             <h1>Profile Page</h1>
             <h2>{ count }</h2>
             <button onClick={changeTheme}>Change Theme</button>

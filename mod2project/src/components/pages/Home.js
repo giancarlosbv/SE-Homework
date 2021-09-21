@@ -12,10 +12,11 @@ const Home = () => {
     }, [])
 
     return ( 
-        <>
+        <div className="current">
             <h1>Home Page</h1>
+            <p>Welcome to your corkboard!</p>
             {/* {data.map(item => <p key={item.id}>{ item.title }</p>)} */}
-        </>
+        </div>
     );
 }
  

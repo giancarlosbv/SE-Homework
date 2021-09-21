@@ -22,7 +22,7 @@ const Other = () => {
 
     return (  
         
-        <div>
+        <div className = "current">
             <h1>{ count }</h1>
             <button onClick={() => setCount(count + 1)}>Add</button>
         </div>

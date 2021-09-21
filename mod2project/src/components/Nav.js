@@ -14,15 +14,15 @@ const Nav = () => {
 
         <Router>
 
-            <div className = "nav-container">
-                <div className= "nav1"><Link to='/'>Home</Link></div>
-                <div className="nav2"><Link to='/profile'>Profile</Link></div>
-                <div className= "nav3"><Link to='/about'>About</Link></div>
+            
+                <div className= "nav1 nav"><Link to='/'>Home</Link></div>
+                <div className="nav2 nav"><Link to='/profile'>Profile</Link></div>
+                <div className= "nav3 nav"><Link to='/about'>About</Link></div>
                 {/* <div><Link to='/contact'>Contact</Link></div> */}
-                <div className= "nav4"><Link to='/other'>Other</Link></div>
-                <div className= "nav5"><Link to='/other'>Other</Link></div>
-                <div className= "nav6"><Link to='/other'>Other</Link></div>
-            </div>
+                <div className= "nav4 nav"><Link to='/other'>Other</Link></div>
+                <div className= "nav5 nav"><Link to='/other'>Other</Link></div>
+                <div className= "nav6 nav"><Link to='/other'>Other</Link></div>
+            
 
             <Switch>
                 <Route exact path='/' component={Home} />

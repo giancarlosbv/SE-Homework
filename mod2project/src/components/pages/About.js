@@ -18,10 +18,10 @@ const About = () => {
     }, [])
 
     return ( 
-        <>
+        <div className = "current">
             <h1>About Page</h1>
             <p>Width: { winWidth }</p>
-        </>
+        </div>
     );
 }
  
