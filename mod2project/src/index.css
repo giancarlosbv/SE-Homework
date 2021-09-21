@@ -1,3 +1,8 @@
+* a {
+  
+    text-decoration:none;
+  
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,24 +16,65 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
-  .container {
+  .app-container{
+    background-image: url(images/corkboard.jpg);
+    min-height:100vh;
+    /* margin:10px 10px 10px 10px; */
+    display: grid;
+    grid-template-columns:.5fr 2.5fr .3fr 1fr .3fr 1fr .3fr ;
+    grid-template-rows: .5fr 1fr .2fr .6fr .4fr .2fr .5fr .5fr .5fr ;
+    grid-template-areas:
+    "header header header header header header header"
+    ". current . nav1 . nav2 ."
+    ". current . .  . . ."
+    ". pomodoro . nav3 . nav4 ."
+    ". pomodoro . nav3 . nav4 ."
+    ". pomodoro . .  . .  ."
+    ". pomodoro . nav5 . nav6 ."
+    ". pomodoro . .  . .  ."
+    "footer footer footer footer footer footer footer "
+
+  }
+  .nav-container {
+    background-color:white;
+    text-decoration: none;
+  }
+  .nav1{
+    grid-area: nav1;
+  }
+  .nav2{
+    grid-area: nav2;
+  }
+  .nav3{
+    grid-area: nav3;
+  }
+  .nav4{
+    grid-area: nav4;
+  }
+  .nav5{
+    grid-area: nav5;
+  }
+  .nav6{
+    grid-area: nav6;
+  }
+  .pomodoro-container {
     color:#c9ccea;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 20vh;
+    min-height: 5vh;
     background: rgb(39,42,85);
     background: radial-gradient(circle, #1E2140 0%, #151932 65%);
+    grid-area: pomodoro;
   }
   
-  .container h1 {
+  .pomodoro-container h1 {
     font-size:2.6rem;
     margin-bottom:0.2rem;
   }
   
-  .container .labels {
+.pomodoro-container .labels {
     list-style: none;
     display: flex;
     text-transform: uppercase;
@@ -36,6 +82,7 @@ body {
     padding:.3rem .3rem;
     background-color: #0C0E1B;
     border-radius: 1.5rem;
+    border: solid 1px black;
   }
   
   .active-label {
@@ -54,12 +101,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15rem;
-    width: 15rem;
+    height: 7.5rem;
+    width: 7.5rem;
     border-radius: 7.5rem;
     color:#efefef;
     background: #151932;
-    font-size: 3.5rem;
+    font-size: 2rem;
     box-shadow: 1rem 1.5rem 2rem rgba(0,0,0,0.6)
   }
   

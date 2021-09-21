@@ -14,7 +14,7 @@ const Home = () => {
     return ( 
         <>
             <h1>Home Page</h1>
-            {data.map(item => <p key={item.id}>{ item.title }</p>)}
+            {/* {data.map(item => <p key={item.id}>{ item.title }</p>)} */}
         </>
     );
 }

@@ -14,13 +14,15 @@ const Nav = () => {
 
         <Router>
 
-            <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/profile'>Profile</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                {/* <li><Link to='/contact'>Contact</Link></li> */}
-                <li><Link to='/other'>Other</Link></li>
-            </ul>
+            <div className = "nav-container">
+                <div className= "nav1"><Link to='/'>Home</Link></div>
+                <div className="nav2"><Link to='/profile'>Profile</Link></div>
+                <div className= "nav3"><Link to='/about'>About</Link></div>
+                {/* <div><Link to='/contact'>Contact</Link></div> */}
+                <div className= "nav4"><Link to='/other'>Other</Link></div>
+                <div className= "nav5"><Link to='/other'>Other</Link></div>
+                <div className= "nav6"><Link to='/other'>Other</Link></div>
+            </div>
 
             <Switch>
                 <Route exact path='/' component={Home} />
