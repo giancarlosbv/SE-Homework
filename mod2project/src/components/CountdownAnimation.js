@@ -10,9 +10,9 @@ const CountdownAnimation = ({ key = 1, timer = 20, animate = true, children}) =>
             isPlaying={animate}
             duration = {timer*60}
             colors ={[
-                ['#ffc', 0.33],
-                ['#ffc', 0.33],
-                ['#ffc', 0.33]
+                ['#FFE6CC', 0.33],
+                ['#FFE6CC', 0.33],
+                ['#FFE6CC', 0.33]
                 
                 ]}
             strokeWidth={6}

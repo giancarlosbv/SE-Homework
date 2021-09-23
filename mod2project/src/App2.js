@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Pomodoro from "./components/pages/Pomodoro";
 
 
-  function App() {
+  function App2() {
 
     return (
       <div className = "app-container">
@@ -18,5 +18,5 @@ import Pomodoro from "./components/pages/Pomodoro";
     );
   }
 
-export default App;
+export default App2;
 

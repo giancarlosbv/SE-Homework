@@ -5,9 +5,9 @@ const Home = () => {
     return ( 
         <div className="current">
         <img src = {thumbtack} height = '50vh'/>
-            <h1>Home Page</h1>
-            <p>Welcome to your corkboard!</p>
-            <image src = "../images/thumbtack.png"/>
+            <h1>Welcome to Corkboard</h1>
+            <p>A bit-sized way to keep your tasks on track.</p>
+            <p>Click somewhere to get started</p>
             {/* {data.map(item => <p key={item.id}>{ item.title }</p>)} */}
         </div>
     );

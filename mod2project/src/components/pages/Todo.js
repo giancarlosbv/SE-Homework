@@ -1,11 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import thumbtack from '../../images/thumbtack.png'
-
+import useLocalStorage from './useLocalStorage'
 
 export default function TodoList(){
 
- const [todo, setTodo] = useState([   
-])
+ const [todo, setTodo] = useLocalStorage('saveToDo',
+ {
+   default: 'Do the dishes'
+ },
+ {
+   default: 'Feed the cats'
+ }
+)
 
 let addItemRef = useRef()
 
@@ -33,7 +39,7 @@ const deleteId = (id) => {
 // const addItem ()
 console.log('Outside of handleSubmit ',todo)
 return (
-  <div className = "current">
+  <div className = "current todo-container">
 
   <img src = {thumbtack} height = '50vh'/>
     <h1>To Do List</h1>

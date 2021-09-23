@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SettingContext } from "../../context/SettingsContext";
 import Button from "../Button"
 import CountdownAnimation from "../CountdownAnimation";
@@ -21,12 +21,13 @@ const Pomodoro = () => {
       } = useContext(SettingContext)
       useEffect(()=> updateExecute(executing), [executing, startAnimate])
 
+
     return (
         <div className='pomodoro-container'>
         <img src = {thumbtack} height = '50vh'/>
         <h1>Pomodoro</h1>
-        <p>Grow Your Mind</p>
-        {pomodoro == 0 ?
+        <div className="quote-container"><p>Pomodoro-ble</p></div>
+        {pomodoro === 0 ?
         <SetPomodoro /> :
         <>
         <ul className ='labels'>
@@ -78,3 +79,6 @@ const Pomodoro = () => {
 }
 
 export default Pomodoro
+
+
+
