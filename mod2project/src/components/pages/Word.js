@@ -1,13 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react'
 import thumbtack from '../../images/thumbtack.png'
+import useLocalStorage from './useLocalStorage'
 
 const Word = () => {
 
+    // const envprocess = process.env.NODE_ENV
 
 
-    const [dictionary, setDictionary] = useState({}
+    const [dictionary, setDictionary] = useState({})
 
-    )
+//     useEffect(()=> {
+//         console.log('useEffect runs: API fetch')
+//         fetch("https://wordsapiv1.p.rapidapi.com/words/${wordRef.current.value}/", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+// 		"x-rapidapi-key": "5857d31fc6msh31bebdec004e9fep196ac1jsn638cdfcc7262"
+// 	}
+// })
+// .then((response) => 
+// 	response.json()
+// )
+// .then((data) => 
+// 	setDictionary(data)
+// )
+// .catch((err) => 
+// 	console.error("err")
+// );
+
+
+
+    //   }, [])
     // const [dictionary, setDictionary] = useLocalStorage('saveDefinition',{}
     //     // results: [definition:""]
     // )
@@ -20,13 +43,14 @@ const Word = () => {
     const handleSubmit = e => {
         e.preventDefault()
         console.log(wordRef.current.value, 'line 14')
+        var rapidApiKey = process.env.REACT_APP_WORD_API_KEY;
 
 
         fetch(`https://wordsapiv1.p.rapidapi.com/words/${wordRef.current.value}/`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
-                "x-rapidapi-key": "5857d31fc6msh31bebdec004e9fep196ac1jsn638cdfcc7262"
+                "x-rapidapi-key": rapidApiKey
             }
         })
             .then((response) =>
@@ -83,7 +107,7 @@ const Word = () => {
                 />
                 <button>Define</button>
             </form>
-            {renderDictionary()}
+            {/* {renderDictionary()} UNCOMMENT THIS WHEN FINISHED*/}
 
 
         </div>
@@ -91,7 +115,3 @@ const Word = () => {
 }
 
 export default Word;
-
-
-{/* <h1>{ count }</h1>
-            <button onClick={() => setCount(count + 1)}>Add</button> */}

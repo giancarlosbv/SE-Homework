@@ -7,9 +7,9 @@ const SetPomodoro = () => {
     const {updateExecute} = useContext(SettingContext)
     //default values of the 3 separate timers
     const [newTimer, setNewTimer] = useState({
-        work: 25,
-        short: 5,
-        long: 15,
+        work: 0,
+        short: 0,
+        long: 0,
         active: 'work'
     })
 

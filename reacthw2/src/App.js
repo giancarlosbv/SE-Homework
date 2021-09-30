@@ -9,9 +9,6 @@ const stateContext = React.createContext(
     }
 
   })
-
-
-
 const App = (props) => {
 
   const [state, setState] = useState({

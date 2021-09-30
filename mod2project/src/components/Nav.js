@@ -22,7 +22,7 @@ const Nav = () => {
             <Link to='/quote' className="nav3 nav"><img src={thumbtack} height='50vh' />Quotes to Ponder</Link>
             <Link to='/word' className="nav4 nav"><img src={thumbtack} height='50vh' />Post-it Dictionary</Link>
             <Link to='/time' className="nav5 nav"><img src={thumbtack} height='50vh' />Date and Time</Link>
-            <Link to='/word' className="nav6 nav"><img src={thumbtack} height='50vh' />Other</Link>
+            {/* <Link to='/word' className="nav6 nav"><img src={thumbtack} height='50vh' />Other</Link> */}
 
 
             <Switch>
